@@ -10,8 +10,7 @@
     },
   },
   "include": [
-    "./src",
-    "./node_modules/@dcl/ecs-scene-utils/dist/index.js"
+    "./src"
   ],
   "exclude": [
     "node_modules",

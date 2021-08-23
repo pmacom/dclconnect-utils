@@ -34,6 +34,8 @@ jobs:
       - run: npm publish
       - uses: JS-DevTools/npm-publish@v1
         with:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           token: ${{ secrets.NPM_TOKEN }}
           tag: "latest"
 

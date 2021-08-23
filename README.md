@@ -11,9 +11,9 @@ npm install dclconnect
 npm install @dcl/ecs-scene-utils
 ```
 
-2.) In your `tsconfig.json` - add a new `path` that points to BOTH the dclconnect package AND the ecs-scene-utils libraries.
+2.) In your `tsconfig.json` - add a new `path` that points to BOTH the dclconnect package AND the ecs-scene-utils libraries
 
-3.) Also be sure to add the `include` path. You do not need to alter anything else in this file. The code below is what it should look like after a brand new `dcl init` project is created.
+3.) Also be sure to add the `include` path. You do not need to alter anything else in this file. The code below is what it should look like after a brand new `dcl init` project is created
 
 ```json
 {

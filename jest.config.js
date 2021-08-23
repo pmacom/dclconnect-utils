@@ -7,4 +7,4 @@ module.exports = {
       tsconfig: 'tsconfig.esm.json',
     },
   },
-};
+}

@@ -1,7 +1,7 @@
 {
-  "name": "easy-npm-package-react",
-  "version": "0.1.0",
-  "description": "Template to create npm packages for react with ",
+  "name": "dclconnect",
+  "version": "0.0.24",
+  "description": "A collection of utilities and helpers for building in decentraland and connecting to dclconnect services",
   "main": "./build/cjs/index.js",
   "types": "./build/cjs/index.d.ts",
   "module": "./build/esm/index.js",
@@ -23,38 +23,37 @@
     "build": "npm run compile:esm && npm run compile:cjs"
   },
   "keywords": [
-    "npm",
-    "example",
-    "react",
-    "hooks",
-    "commonjs",
-    "es6"
+    "decentraland",
+    "dcl"
   ],
-  "homepage": "https://github.com/bring-shrubbery/easy-npm-package-react",
+  "homepage": "https://github.com/pmacom/dclconnect",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bring-shrubbery/easy-npm-package-react"
+    "url": "git+https://github.com/pmacom/dclconnect.git"
   },
   "bugs": {
-    "url": "https://github.com/bring-shrubbery/easy-npm-package-react/issues"
+    "url": "https://github.com/pmacom/dclconnect/issues"
   },
-  "author": {
-    "name": "Antoni Silvestrovič",
-    "email": "antoni.silvestrovic@gmail.com",
-    "url": "http://antoni.ai/"
+  "author": "Patmacs#8139",
+  "prettier": {
+    "printWidth": 80,
+    "singleQuote": true,
+    "semi": false
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.8",
-    "react-dom": "^16.8"
+    "colyseus.js": "^0.14.12",
+    "decentraland-ecs": "^6.6.5"
   },
   "devDependencies": {
+    "@dcl/ecs-scene-utils": "^1.7.2",
     "@testing-library/react": "^11",
     "@testing-library/react-hooks": "^7",
     "@types/jest": "^26",
     "@types/node": "^14",
     "@types/react": "^16.9",
     "@types/react-dom": "^16.9",
+    "decentraland-ecs": "^6.6.5",
     "gts": "^3",
     "husky": "^6.0.0",
     "jest": "^27",
@@ -64,6 +63,6 @@
     "react-test-renderer": "^16.14.0",
     "rimraf": "^3",
     "ts-jest": "^27",
-    "typescript": "^4.2"
+    "typescript": "^4.3.5"
   }
 }

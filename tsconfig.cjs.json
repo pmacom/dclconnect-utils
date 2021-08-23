@@ -13,6 +13,7 @@
     "./src"
   ],
   "exclude": [
+    "build",
     "node_modules",
     "**/tests/*",
     "**/__tests__/*",

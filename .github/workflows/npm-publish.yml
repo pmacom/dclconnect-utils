@@ -31,7 +31,6 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish
       - uses: JS-DevTools/npm-publish@v1
         with:
           dry-run: true

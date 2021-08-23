@@ -7,22 +7,22 @@
     "moduleResolution": "node",
     "rootDir": "./src",
     "outDir": "./build/esm",
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "paths": {
+      "@dcl/ecs-scene-utils": [
+        "./node_modules/@dcl/ecs-scene-utils/dist/index.d.ts"
+      ]
+    },
   },
   "include": [
-    "./src",
-    "./node_modules/@dcl/ecs-scene-utils/dist/index.js"
+    "./src"
   ],
-  "paths": {
-    "@dcl/ecs-scene-utils": [
-      "node_modules/@dcl/ecs-scene-utils/dist/index.d.ts"
-    ]
-  },
   "exclude": [
     "node_modules",
     "**/tests/*",
     "**/__tests__/*",
     "**/test/*",
-    "**/__test__/*"
+    "**/__test__/*",
+    "scene"
   ]
 }

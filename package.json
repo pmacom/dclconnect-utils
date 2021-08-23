@@ -26,13 +26,13 @@
     "decentraland",
     "dcl"
   ],
-  "homepage": "https://github.com/pmacom/dclconnect",
+  "homepage": "https://github.com/pmacom/dclconnect-utils",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmacom/dclconnect.git"
+    "url": "git+https://github.com/pmacom/dclconnect-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/pmacom/dclconnect/issues"
+    "url": "https://github.com/pmacom/dclconnect-utils/issues"
   },
   "author": "Patmacs#8139",
   "prettier": {

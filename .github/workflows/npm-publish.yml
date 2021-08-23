@@ -34,10 +34,14 @@ jobs:
       - run: npm publish
       - uses: JS-DevTools/npm-publish@v1
         with:
+          dry-run: true
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           token: ${{ secrets.NPM_TOKEN }}
           tag: "latest"
+      - if: steps.publish.outputs.type != 'none'
+        run: |
+          echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
 
   # Uncomment to publish to Github Package Registry.
   # You will also need to add Github Token to secret variables.

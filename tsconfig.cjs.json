@@ -2,17 +2,17 @@
   "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
   "compilerOptions": {
     "module": "CommonJS",
-    "outDir": "./build/cjs"
+    "outDir": "./build/cjs",
+    "paths": {
+      "@dcl/ecs-scene-utils": [
+        "./node_modules/@dcl/ecs-scene-utils/dist/index.d.ts"
+      ]
+    },
   },
   "include": [
     "./src",
     "./node_modules/@dcl/ecs-scene-utils/dist/index.js"
   ],
-  "paths": {
-    "@dcl/ecs-scene-utils": [
-      "node_modules/@dcl/ecs-scene-utils/dist/index.d.ts"
-    ]
-  },
   "exclude": [
     "node_modules",
     "**/tests/*",
